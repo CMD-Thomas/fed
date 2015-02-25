@@ -1,0 +1,200 @@
+
+body {
+	background-color: #eee;
+	color: #333;
+	line-height: 150%;
+	font-size: 1.3em;
+	margin: auto;
+}
+
+/*header flex container*/
+body > header{
+	display: flex;
+	padding: 0;
+	margin: 0;
+	justify-content: space-between;
+	flex-direction: row-wrap;
+	align-items: flex-end;
+}
+
+.artikelen2 {
+	display: flex;
+	flex-direction: column;
+	transition: 5s ease-in;
+}
+
+.artikel-knop, .project-knop {
+	font-size: 1em;
+}
+
+.artikel-knop:after,
+.project-knop:after
+ {
+	content: " +";
+	color: green;
+}
+
+.artikelen2 > footer {
+	order: 3;
+}
+
+article > header > p {
+	font-size: 0.6em;
+}
+
+footer  {
+	font-size: 0.7em;
+}
+footer h1 {
+	font-size: 1.2em;
+}
+
+
+
+header > input {
+	width: 200px;
+	height: 50px;
+	border: 10px solid black;
+}
+
+input {
+	padding: 1em 0.5em 0em 0.5em;
+}
+
+h1 { 
+	font-size:1.3em;
+
+}
+
+h2 {
+	font-size:1.1em;
+}
+
+img {
+	padding: 0px;
+	margin: 0px;
+	max-width: 100%;
+}
+
+aside {
+	font-size: 80%;
+	margin-left: 4%;
+}
+
+
+
+nav > ul {
+	display: flex;
+	width: 100%;
+	margin: 0 0 0 0;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+nav > ul > li {
+	text-decoration: none;
+	list-style-type: none;
+	height: 40px;
+}
+
+.fieldsetHidden {
+	display: none;
+}
+
+footer > ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+main + section > article  {
+
+	display: flex;
+	flex-direction: column;
+
+}
+
+main + section > article > header {
+	font-size: 0.7em;
+	order: 0;
+}
+
+
+main + section > article >  footer {
+	order: 3;
+	font-size: 0.5em;
+}
+
+label {
+	display: block;
+	margin: 0 0 1em;
+}
+label > input {
+	display: block;
+}
+
+input[type="radio"] + label{
+	display: inline;
+}
+
+
+
+
+fieldset:first-child { 
+	display: flex;
+	flex-direction: column;
+}
+
+label[for="naam"]::after,
+label[for="email"]::after {
+	content: " *";
+	color: red;
+}
+
+.fieldsetDisplay {
+	display: block;
+}
+
+.touch {
+	margin: 0.2em;
+}
+
+
+@media only screen and (min-width: 40em) {
+
+	body{ 
+			max-width: 35em;
+		}
+
+
+	nav {
+		display: block;
+	}
+		
+	nav > ul {
+		display: flex;
+		width: 100%;
+		margin: 0 0 0 0;
+		justify-content: space-around;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	nav > ul > li {
+		margin: 2%;
+	}
+
+	.flexboxgroot{
+		display: flex;
+		flex-direction: row;
+	}
+	
+	aside {
+		width: 25%;
+	}
+	main {
+		width: 73%
+	}
+
+}
+
